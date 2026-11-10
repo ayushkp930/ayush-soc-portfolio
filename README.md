@@ -41,7 +41,7 @@ The `www` domain is configured with the following DNS record:
 
 | Type | Host | Target | TTL |
 | --- | --- | --- | --- |
-| CNAME | `www` | `metric-sailfish-krgqi5qgjap3dpuwy8l9puip.herokudns.com` | Auto |
+| CNAME | `www` | `metric-sailfish-krgqi5qgjap3dpuwyxxxpuip.herokudns.com` | Auto |
 
 The target was supplied by Heroku during domain setup. **Always reconfirm it in Heroku → Settings → Domains before changing DNS**; targets can differ if a domain is re-added.
 
