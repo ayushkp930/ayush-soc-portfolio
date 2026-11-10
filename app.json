@@ -1,0 +1,16 @@
+{
+  "name": "Ayush Patel \u2014 SOC & Purple Team Portfolio",
+  "description": "Static cybersecurity portfolio served by a small dependency-free Node.js HTTP server with security headers.",
+  "repository": "https://github.com/ayushkp930",
+  "keywords": [
+    "portfolio",
+    "cybersecurity",
+    "soc"
+  ],
+  "env": {},
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
