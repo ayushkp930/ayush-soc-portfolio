@@ -31,12 +31,7 @@ createServer(async (req, res) => {
   for (const [key, value] of Object.entries(headers)) res.setHeader(key, value);
   // Canonical hostname only; never derive a redirect target from untrusted Host headers.
   const host = (req.headers.host || '').split(':')[0].toLowerCase();
-  if (host === 'www.ayush-cyber-def.tech' && ['GET', 'HEAD'].includes(req.method)) {
-    const pathname = new URL(req.url, 'http://localhost');
-    const destination = 'https://ayush-cyber-def.tech' + pathname.pathname + pathname.search;
-    res.writeHead(308, { Location: destination, 'Cache-Control': 'public, max-age=300' });
-    return res.end();
-  }
+ 
   if (req.socket.encrypted || req.headers['x-forwarded-proto'] === 'https') {
     res.setHeader('Strict-Transport-Security', 'max-age=31536000');
   }
