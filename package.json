@@ -1,0 +1,15 @@
+{
+  "name": "ayush-soc-purple-team-portfolio",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Secure, dependency-free static portfolio server for Heroku and GitHub Pages",
+  "type": "module",
+  "engines": {
+    "node": "26.x"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "license": "UNLICENSED"
+}
